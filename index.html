@@ -3,83 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Myntra Clone</title>
+  <title>Sumit's Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <!-- Navbar -->
-  <header class="navbar">
-    <div class="logo">Myntra Clone</div>
+  <header>
     <nav>
-      <a href="#">Men</a>
-      <a href="#">Women</a>
-      <a href="#">Kids</a>
-      <a href="#">Home & Living</a>
-      <a href="#">Beauty</a>
+      <h2 class="logo">Sumit's Portfolio</h2>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-    <input type="text" placeholder="Search for products..." class="search-bar">
   </header>
 
-  <!-- Banner -->
-  <section class="banner">
-    <img src="https://images.unsplash.com/photo-1521335629791-ce4aec67dd47?w=1200" alt="Fashion Banner">
-  </section>
-
-  <!-- Categories -->
-  <section class="categories">
-    <h2>Categories</h2>
-    <div class="category-grid">
-      <div>
-        <img src="https://images.unsplash.com/photo-1602810318383-e3b59a3c61a6?w=500" alt="Men">
-        <p>Men</p>
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="bubble-text">Hi, I'm Sumit Kumar</div>
+        <p class="typing-text">Frontend Developer | C, C++, HTML, CSS, JavaScript</p>
+        <p>Siwan, Bihar, India | sumit841231singh@gmail.com | +91 9155622784</p>
       </div>
-      <div>
-        <img src="https://images.unsplash.com/photo-1618354691373-d851c6b6b0f6?w=500" alt="Women">
-        <p>Women</p>
-      </div>
-      <div>
-        <img src="https://images.unsplash.com/photo-1612336307429-2f8f1ec9c35f?w=500" alt="Kids">
-        <p>Kids</p>
-      </div>
-      <div>
-        <img src="https://images.unsplash.com/photo-1600185365483-26d7a3d357b2?w=500" alt="Shoes">
-        <p>Shoes</p>
+      <div class="hero-image">
+        <img src="sumit.jpg" alt="Sumit Kumar">
       </div>
     </div>
   </section>
 
-  <!-- Products -->
-  <section class="products">
-    <h2>Popular Products</h2>
-    <div class="product-grid">
-      <div class="product">
-        <img src="https://images.unsplash.com/photo-1514995669114-b2dbec4d6c0e?w=400" alt="T-shirt">
-        <h3>T-shirt</h3>
-        <p>₹499</p>
-      </div>
-      <div class="product">
-        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400" alt="Shoes">
-        <h3>Sneakers</h3>
-        <p>₹1,299</p>
-      </div>
-      <div class="product">
-        <img src="https://images.unsplash.com/photo-1618354691373-d851c6b6b0f6?w=400" alt="Dress">
-        <h3>Dress</h3>
-        <p>₹1,999</p>
-      </div>
-      <div class="product">
-        <img src="https://images.unsplash.com/photo-1600185365483-26d7a3d357b2?w=400" alt="Backpack">
-        <h3>Backpack</h3>
-        <p>₹899</p>
-      </div>
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="exp-card">
+      <h3>Oriental Institute of Science & Technology</h3>
+      <p>B.Tech in CSE | 2022–2026 | Bhopal, MP</p>
+      <p><strong>CGPA:</strong> 7.44 (Till 6th Semester)</p>
+    </div>
+    <div class="exp-card">
+      <h3>R.N. Inter College, Siwan</h3>
+      <p>Class 12th | 2020–2021 | Siwan, Bihar</p>
+      <p><strong>Percentage:</strong> 70%</p>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>© 2025 Myntra Clone | Made with ❤️</p>
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>EmpowerOrphans | Orphanages Automation Website</h3>
+      <p>Sep 2024 – Oct 2024</p>
+      <ul>
+        <li>Automated orphanage management processes</li>
+        <li>Features: donation tracking, event management</li>
+        <li>Stack: HTML, CSS, JS, SQL</li>
+      </ul>
+    </div>
+    <div class="project-card">
+      <h3>Library Management System</h3>
+      <p>Feb 2023 – Mar 2023</p>
+      <ul>
+        <li>Efficient library operations handling</li>
+        <li>Core functionalities: book registration, updation, return</li>
+        <li>Implemented in C++</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications">
+    <h2>Certifications & Coursework</h2>
+    <div class="project-card">
+      <h3>Courses & Certifications</h3>
+      <ul>
+        <li>SKILL-A-THON Introduction to Networks (CISCO)</li>
+        <li>Problem-solving in C (NPTEL)</li>
+        <li>SQL Basics (Coursera)</li>
+        <li>Intro to HTML (Coursera)</li>
+        <li>HTML & CSS Certification - Ziksha/NASSCOM</li>
+      </ul>
+    </div>
+    <div class="project-card">
+      <h3>Core Subjects</h3>
+      <ul>
+        <li>Data Structures & Algorithms</li>
+        <li>Computer Networks</li>
+        <li>Object-Oriented Programming</li>
+        <li>Operating System</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="exp-card contact-card">
+      <a href="mailto:sumit841231singh@gmail.com" target="_blank" class="contact-btn">📧 Email</a>
+      <a href="tel:+919155622784" class="contact-btn">📱 Call</a>
+      <a href="https://www.linkedin.com/in/sumit-kumar-9a086128b" target="_blank" class="contact-btn">💼 LinkedIn</a>
+      <a href="https://github.com/sumitsingh6010" target="_blank" class="contact-btn">💻 GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Sumit Kumar | All Rights Reserved</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

@@ -2,115 +2,544 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sumit's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta name="description" content="Sumit Kumar - Frontend Developer Portfolio. Computer Science student specializing in web development with HTML, CSS, JavaScript, and React.js">
+  <meta name="theme-color" content="#667eea">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Sumit Kumar | Frontend Developer Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <header>
-    <nav>
-      <h2 class="logo">Sumit's Portfolio</h2>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero-section">
-    <div class="hero-content">
-      <div class="hero-text">
-        <div class="bubble-text">Hi, I'm Sumit Kumar</div>
-        <p class="typing-text">Frontend Developer | C, C++, HTML, CSS, JavaScript</p>
-        <p>Siwan, Bihar, India | sumit841231singh@gmail.com | +91 9155622784</p>
+  <!-- Side Navigation -->
+  <nav class="side-nav">
+    <div class="nav-brand">
+      <div class="brand-initial">SK</div>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="#hero" class="nav-link active" data-section="hero">
+        <i class="fas fa-home"></i>
+        <span class="nav-text">Home</span>
+      </a></li>
+      <li><a href="#about" class="nav-link" data-section="about">
+        <i class="fas fa-user"></i>
+        <span class="nav-text">About</span>
+      </a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills">
+        <i class="fas fa-code"></i>
+        <span class="nav-text">Skills</span>
+      </a></li>
+      <li><a href="#education" class="nav-link" data-section="education">
+        <i class="fas fa-graduation-cap"></i>
+        <span class="nav-text">Education</span>
+      </a></li>
+      <li><a href="#projects" class="nav-link" data-section="projects">
+        <i class="fas fa-laptop-code"></i>
+        <span class="nav-text">Projects</span>
+      </a></li>
+      <li><a href="#certifications" class="nav-link" data-section="certifications">
+        <i class="fas fa-certificate"></i>
+        <span class="nav-text">Certifications</span>
+      </a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">
+        <i class="fas fa-envelope"></i>
+        <span class="nav-text">Contact</span>
+      </a></li>
+    </ul>
+    <div class="nav-footer">
+      <div class="social-links-nav">
+        <a href="https://github.com/sumitsingh6010" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sumit-kumar-9a086128b" target="_blank"><i class="fab fa-linkedin"></i></a>
       </div>
-      <div class="hero-image">
-        <img src="sumit.jpg" alt="Sumit Kumar">
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <div class="mobile-brand">SK</div>
+    <button class="mobile-toggle" id="mobileToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    
+    <!-- Cover Page -->
+    <section id="cover" class="cover-page">
+      <div class="cover-container">
+        <div class="cover-image-wrapper">
+          <div class="cover-image-ring"></div>
+          <div class="cover-image-circle">
+            <img src="sumit.jpg" alt="Sumit Kumar">
+          </div>
+        </div>
+        <h1 class="cover-title">FRONT-END<br>DEVELOPER</h1>
+        <p class="cover-subtitle">PORTFOLIO OF SUMIT KUMAR</p>
+        <button class="scroll-down" onclick="document.getElementById('hero').scrollIntoView({behavior: 'smooth'})">
+          <i class="fas fa-chevron-down"></i>
+        </button>
       </div>
-    </div>
-  </section>
+    </section>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">Sumit Kumar</h1>
+          <div class="hero-title-wrapper">
+            <h2 class="hero-title">Frontend Developer</h2>
+          </div>
+          <p class="hero-description">
+            Passionate about creating beautiful and functional web experiences with modern technologies.
+            Currently pursuing B.Tech in Computer Science Engineering.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">
+              <i class="fas fa-envelope"></i> Get In Touch
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <i class="fas fa-eye"></i> View Work
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">4+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">7.44</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-wrapper">
+            <div class="image-frame">
+              <img src="sumit.jpg" alt="Sumit Kumar">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Education -->
-  <section id="education">
-    <h2>Education</h2>
-    <div class="exp-card">
-      <h3>Oriental Institute of Science & Technology</h3>
-      <p>B.Tech in CSE | 2022–2026 | Bhopal, MP</p>
-      <p><strong>CGPA:</strong> 7.44 (Till 6th Semester)</p>
-    </div>
-    <div class="exp-card">
-      <h3>R.N. Inter College, Siwan</h3>
-      <p>Class 12th | 2020–2021 | Siwan, Bihar</p>
-      <p><strong>Percentage:</strong> 70%</p>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-container">
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Crafting Digital Experiences</h3>
+            <p>
+              I'm a Computer Science Engineering student at Oriental Institute of Science & Technology, Bhopal, 
+              with a passion for frontend development. I enjoy building clean, efficient, and user-friendly web applications.
+            </p>
+            <p>
+              My journey in programming started with C and C++, and has evolved to include modern web technologies 
+              like HTML, CSS, JavaScript, and SQL. I'm constantly learning and adapting to new technologies 
+              to stay ahead in this ever-evolving field.
+            </p>
+            <div class="about-info">
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <span class="info-label">Location</span>
+                  <span class="info-value">Siwan, Bihar, India</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <span class="info-label">Email</span>
+                  <span class="info-value">sumit841231singh@gmail.com</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <span class="info-label">Phone</span>
+                  <span class="info-value">+91 9155622784</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>EmpowerOrphans | Orphanages Automation Website</h3>
-      <p>Sep 2024 – Oct 2024</p>
-      <ul>
-        <li>Automated orphanage management processes</li>
-        <li>Features: donation tracking, event management</li>
-        <li>Stack: HTML, CSS, JS, SQL</li>
-      </ul>
-    </div>
-    <div class="project-card">
-      <h3>Library Management System</h3>
-      <p>Feb 2023 – Mar 2023</p>
-      <ul>
-        <li>Efficient library operations handling</li>
-        <li>Core functionalities: book registration, updation, return</li>
-        <li>Implemented in C++</li>
-      </ul>
-    </div>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+      <div class="skills-container">
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <h3>HTML5</h3>
+            <div class="skill-progress">
+              <div class="progress-bar" data-progress="90"></div>
+            </div>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <h3>CSS3</h3>
+            <div class="skill-progress">
+              <div class="progress-bar" data-progress="85"></div>
+            </div>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-js"></i>
+            </div>
+            <h3>JavaScript</h3>
+            <div class="skill-progress">
+              <div class="progress-bar" data-progress="80"></div>
+            </div>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>C++</h3>
+            <div class="skill-progress">
+              <div class="progress-bar" data-progress="85"></div>
+            </div>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-copyright"></i>
+            </div>
+            <h3>C</h3>
+            <div class="skill-progress">
+              <div class="progress-bar" data-progress="80"></div>
+            </div>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>MySQL</h3>
+            <div class="skill-progress">
+              <div class="progress-bar" data-progress="75"></div>
+            </div>
+            <span class="skill-percent">75%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-react"></i>
+            </div>
+            <h3>React.js</h3>
+            <div class="skill-progress">
+              <div class="progress-bar" data-progress="70"></div>
+            </div>
+            <span class="skill-percent">70%</span>
+          </div>
+        </div>
+        <div class="knowledge-section">
+          <h3>Core Knowledge</h3>
+          <div class="knowledge-tags">
+            <span class="tag">Data Structures & Algorithms</span>
+            <span class="tag">Object Oriented Programming</span>
+            <span class="tag">Operating System</span>
+            <span class="tag">Database Management System</span>
+            <span class="tag">React.js</span>
+            <span class="tag">Git & GitHub</span>
+            <span class="tag">Visual Studio Code</span>
+            <span class="tag">MySQL</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Certifications -->
-  <section id="certifications">
-    <h2>Certifications & Coursework</h2>
-    <div class="project-card">
-      <h3>Courses & Certifications</h3>
-      <ul>
-        <li>SKILL-A-THON Introduction to Networks (CISCO)</li>
-        <li>Problem-solving in C (NPTEL)</li>
-        <li>SQL Basics (Coursera)</li>
-        <li>Intro to HTML (Coursera)</li>
-        <li>HTML & CSS Certification - Ziksha/NASSCOM</li>
-      </ul>
-    </div>
-    <div class="project-card">
-      <h3>Core Subjects</h3>
-      <ul>
-        <li>Data Structures & Algorithms</li>
-        <li>Computer Networks</li>
-        <li>Object-Oriented Programming</li>
-        <li>Operating System</li>
-      </ul>
-    </div>
-  </section>
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="education-container">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Oct 2022 - Jun 2026</span>
+              <h3>Bachelor of Technology (B.Tech)</h3>
+              <h4>Oriental Institute of Science & Technology</h4>
+              <p class="location"><i class="fas fa-map-marker-alt"></i> Bhopal, Madhya Pradesh</p>
+              <div class="education-details">
+                <span class="detail-item">
+                  <i class="fas fa-book"></i>
+                  Computer Science and Engineering
+                </span>
+                <span class="detail-item highlight">
+                  <i class="fas fa-star"></i>
+                  CGPA: 7.44
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2020 - 2021</span>
+              <h3>Higher Secondary (Class 12th)</h3>
+              <h4>R.N.Y Inter College, Siwan</h4>
+              <p class="location"><i class="fas fa-map-marker-alt"></i> Siwan, Bihar</p>
+              <div class="education-details">
+                <span class="detail-item highlight">
+                  <i class="fas fa-star"></i>
+                  Percentage: 67.60%
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <div class="exp-card contact-card">
-      <a href="mailto:sumit841231singh@gmail.com" target="_blank" class="contact-btn">📧 Email</a>
-      <a href="tel:+919155622784" class="contact-btn">📱 Call</a>
-      <a href="https://www.linkedin.com/in/sumit-kumar-9a086128b" target="_blank" class="contact-btn">💼 LinkedIn</a>
-      <a href="https://github.com/sumitsingh6010" target="_blank" class="contact-btn">💻 GitHub</a>
-    </div>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="section-header">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+      <div class="projects-container">
+        <div class="project-card-large">
+          <div class="project-number">01</div>
+          <div class="project-content">
+            <span class="project-date">July 2024 – Nov 2024</span>
+            <h3>Online ERP System for College Management</h3>
+            <h4>Web Application</h4>
+            <p>
+              Developed a responsive, component-based ERP frontend with modules like student dashboard and attendance tracker. 
+              Integrated real-time API synchronization to improve system accuracy and user experience.
+            </p>
+            <div class="project-features">
+              <div class="feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Responsive component-based frontend architecture</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Student dashboard and attendance tracking modules</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Real-time API integration for improved accuracy</span>
+              </div>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">React.js</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card-large">
+          <div class="project-number">02</div>
+          <div class="project-content">
+            <span class="project-date">Sep 2024 – Oct 2024</span>
+            <h3>EmpowerOrphans</h3>
+            <h4>Orphanage Automation Website</h4>
+            <p>
+              Developed a web platform to automate orphanage management with features like donation tracking, user profiles, and event management. 
+              Improved operational efficiency by building a structured, user-friendly, and scalable system.
+            </p>
+            <div class="project-features">
+              <div class="feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Donation tracking and user profile management</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Event management and administrative operations</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Structured, scalable system architecture</span>
+              </div>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">SQL</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card-large">
+          <div class="project-number">03</div>
+          <div class="project-content">
+            <span class="project-date">Feb 2023 – Mar 2023</span>
+            <h3>Strong Password Generator</h3>
+            <h4>Web Application</h4>
+            <p>
+              Created a customizable password generator allowing users to select length and character types. 
+              Implemented secure random password generation logic using JavaScript.
+            </p>
+            <div class="project-features">
+              <div class="feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Customizable password length and character selection</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Secure random password generation algorithm</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Clean and intuitive user interface</span>
+              </div>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <footer>
-    <p>© 2025 Sumit Kumar | All Rights Reserved</p>
-  </footer>
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications-section">
+      <div class="section-header">
+        <span class="section-number">05</span>
+        <h2 class="section-title">Certifications & Courses</h2>
+      </div>
+      <div class="certifications-container">
+        <div class="cert-grid">
+          <div class="cert-card">
+            <div class="cert-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3>2nd Position in College Hackathon 2024</h3>
+            <p class="cert-issuer">Developed web-based smart attendance & management system</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>Database Management Systems (DBMS)</h3>
+            <p class="cert-issuer">NPTEL</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>SQL Basics (Learn-Quest)</h3>
+            <p class="cert-issuer">Coursera</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <h3>Introduction to HTML</h3>
+            <p class="cert-issuer">Coursera</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>HTML & CSS Training Certification</h3>
+            <p class="cert-issuer">Ziksha / NASSCOM Foundation</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="section-header">
+        <span class="section-number">06</span>
+        <h2 class="section-title">Let's Connect</h2>
+      </div>
+      <div class="contact-container">
+        <div class="contact-content">
+          <div class="contact-text">
+            <h3>Get In Touch</h3>
+            <p>
+              I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. 
+              Feel free to reach out!
+            </p>
+          </div>
+          <div class="contact-methods">
+            <a href="mailto:sumit841231singh@gmail.com" class="contact-method">
+              <div class="method-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="method-content">
+                <span class="method-label">Email</span>
+                <span class="method-value">sumit841231singh@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+919155622784" class="contact-method">
+              <div class="method-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="method-content">
+                <span class="method-label">Phone</span>
+                <span class="method-value">+91 9155622784</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/sumit-kumar-9a086128b" target="_blank" class="contact-method">
+              <div class="method-icon">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <div class="method-content">
+                <span class="method-label">LinkedIn</span>
+                <span class="method-value">Connect with me</span>
+              </div>
+            </a>
+            <a href="https://github.com/sumitsingh6010" target="_blank" class="contact-method">
+              <div class="method-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="method-content">
+                <span class="method-label">GitHub</span>
+                <span class="method-value">View my code</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Sumit Kumar. All rights reserved.</p>
+        <p class="footer-subtitle">Designed & Built with <i class="fas fa-heart"></i></p>
+      </div>
+    </footer>
+
+  </main>
 
   <script src="script.js"></script>
 </body>
